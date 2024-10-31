@@ -26,13 +26,19 @@
                 </div>
             </div>
 
-            
+            @if ($user->role === 'administrador')
             <div class="p-4 sm:p-8 bg-white dark:bg-gray-800 shadow sm:rounded-lg">
                 <div class="max-w-xl">
                     @include('profile.partials.register-user-form')
                 </div>
             </div>
-
+            
+            <div class="p-4 sm:p-8 bg-white dark:bg-gray-800 shadow sm:rounded-lg">
+                <div class="max-w-xl">
+                    @include('profile.partials.index-user')
+                </div>
+            </div>
+            @endif
         
     </div>
 </x-app-layout>

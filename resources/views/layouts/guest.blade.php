@@ -15,11 +15,12 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans text-gray-900 antialiased">
-        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100 dark:bg-gray-900">
-            <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white dark:bg-gray-800 shadow-md overflow-hidden sm:rounded-lg">
-                <div class="mt-20 mb-20">
-                    <a href="/">
-                        <p class="text-gray-400 flex justify-center fs-1">SIMCREDIT</p>
+        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-900 dark:bg-gray-900">
+            <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-gray-200 dark:bg-gray-800 shadow-md overflow-hidden sm:rounded-lg mb-10 d-flex">
+                <div class="">
+                    <a class="" href="/">
+                        <img class="mx-auto p2"src="https://i.postimg.cc/jqgFNTnj/DALL-E-2024-10-31-11-41-11-A-minimalistic-logo-with-the-text-SIMCREDIT-in-modern-sans-serif-fon-proc.png" style="width: 250px"/>
+                        
                     </a>
                 </div>
                 {{ $slot }}

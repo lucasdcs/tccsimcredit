@@ -54,7 +54,7 @@
             }
         
         </style>
-
+        <!--
         <div>
             <table style="border: 2px solid black;letter-spacing: 1px;border-collapse: collapse;">
             <thead>
@@ -75,7 +75,7 @@
             </tbody>
             </table>
         </div>
-
+        -->
         <div class="flex items-center gap-4">
             <x-primary-button>{{ __('Save') }}</x-primary-button>
 

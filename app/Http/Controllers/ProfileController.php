@@ -12,6 +12,20 @@ use App\Models\User;
 
 class ProfileController extends Controller
 {
+
+    public function index()
+    {
+        $usuarios = User::get();
+       
+       return view(
+        'profile.index', [
+            'usuarios' => $usuarios
+        ]
+        );
+
+    }
+    
+
     /**
      * Display the user's profile form.
      */
@@ -21,6 +35,9 @@ class ProfileController extends Controller
             'user' => $request->user(),
         ]);
     }
+
+    
+
 
     /**
      * Update the user's profile information.
