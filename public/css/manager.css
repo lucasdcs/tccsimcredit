@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --bg_color: #FFFFFF;
+    --bg_color_bg: #f1f1f1;
+    --color_sombra: #9a9a9a;
+    --color_borda: #dbdbdb;
+    --color_borda2: #e4e4e4;
+    --label_color: #898989;
+    --input_color: #181515;
+    --rover: #e2e2e2;
+    --verde-azulado: #00ac9a;
+    --verde-azulado-escuro: #003641;
+    --verde-cabecalho: #12434e;
+    --verde-azulado-escuro-tabela: #0036413f;
+    --verde: #7DB61C;
+    --verde-claro: #CCE133;
+    --roxo: #49479D;
+}
+
+main {
+    padding: 66px 16px 16px 16px;
+    transition: all 0.5s ease;
+}
+
+.section_cabecalho {
+    background-color: var(--bg_color_bg);
+    border-radius: 16px;
+    border: 1px solid var(--color_borda);
+    margin-bottom: 16px;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 0.5fr 0.5fr;
+    gap: 16px;
+}
+
+.section_cabecalho > :last-child {
+    justify-self: end;
+    align-self: end;
+    grid-column: 5;
+}
+
+.label-principal {
+    color: black;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    transition: all 0.1s ease-in;
+}
+
+.input_cabecalho {
+    border: 1px solid var(--color_borda);
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: var(--bg_color);
+    color: var(--input_color);
+}
+
+.input_cabecalho:focus {
+    outline: none;
+}
+
+#article_button {
+    position: relative;
+    border: none;
+    color: var(--bg_color);
+    background-color: var(--verde-azulado);
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 4px 16px;
+    transition: top 0.1s, left 0.1s;
+}
+
+#article_button:active {
+    box-shadow: inset 1px 1px 0px 1px var(--verde-cabecalho);
+    top: 1px;
+    left: 1px;
+}
+
+/* Tabela */
+.section_table {
+    background-color: var(--bg_color_bg);
+    border-radius: 16px;
+    border: 1px solid var(--color_borda);
+    margin-bottom: 16px;
+    padding: 16px;
+}
+
+.table_operacao_total {
+    width: 100%;
+    border-radius: 16px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    overflow: hidden;
+}
+
+.th_table_operacao {
+    padding: 8px 16px;
+    background-color: var(--verde-cabecalho);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: var(--bg_color);
+    text-align: center;
+}
+
+.clickable-row:nth-child(even) {
+    background-color: var(--rover);
+}
+
+.clickable-row:nth-child(odd) {
+    background-color: var(--bg_color_bg);
+}
+
+.clickable-row:hover {
+    background-color: var(--verde-azulado-escuro-tabela);
+    transition: all 0.5s ease;
+}
+
+.td_table_operacao {
+    padding: 8px 16px;
+}
+
+/* Paginação */
+.pagination {
+    margin: 8px 0px;
+}
+
+.icon_pagination {
+    margin: 0px 8px;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+    color: white;
+    background-color: var(--verde-azulado-escuro);
+    border: none;
+    transition: all 0.5s ease;
+}
+
+.current {
+    margin: 0px 8px;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 4px;
+    border: 1px solid var(--color_borda);
+}
+
+.icon_pagination:hover,
+.icon_pagination:active {
+    background-color: var(--verde-azulado);
+    color: white;
+    cursor: pointer;
+}
+
+.step-links {
+    display: flex;
+    padding: 10px;
+}
+
+.dados_cooperado {
+    padding: 16px;
+    background-color: var(--bg_color_bg);
+    box-shadow: 0px 0px 4px 1px var(--color_sombra);
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.style {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: var(--label_color);
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+input {
+    border: none;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    background-color: var(--bg_color_bg);
+    color: var(--input_color);
+}

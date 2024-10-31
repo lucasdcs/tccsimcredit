@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --verde-azulado: #00AE9D;
+    --verde-azulado-escuro: #003641;
+    --verde-azulado-escuro_sombra: #012026;
+    --verde: #7DB61C;
+    --verde-claro: #CCE133;
+    --roxo: #49479D;
+    --branco: #ffffff;
+}
+
+/* Menu Sidebar */
+.sidebar {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #12434e;
+    overflow-x: hidden;
+    transition: all 0.5s ease;
+    z-index: 150;
+}
+
+/* Sidebar Links */
+.sidebar a {
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--branco);
+    display: flex;
+    transition: all 0.5s ease;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.sidebar a:hover {
+    background-color: var(--verde-azulado-escuro);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: var(--verde);
+    box-shadow: inset 1px 3px 5px var(--verde-azulado-escuro_sombra);
+}
+
+/*ID do "nome do usuario"*/
+.sidebar-text {
+    position: absolute;
+    padding-left: 34px;
+    transition: opacity 0.5s ease;
+    white-space: nowrap;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}
