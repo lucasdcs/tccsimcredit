@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.table-style {
+
+    border: 1px solid #b5b5b5;
+    padding: 15px 150px;
+}
+
+.table-td-style {
+
+    padding: 20px;
+}
+
+.table-th-style {
+    border: 1px solid #b5b5b5;
+    padding: 20px;
+}
+
+.table-th-button {
+    border: 1px solid #b5b5b5;
+    padding: 15px 30px;
+}
+
+.td-bg {
+    background-color: #f4f4f4
+}
+
+.btn-btn-dark {
+    background-color: black;
+    color: white;
+    padding: 6px 15px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.btn-btn-secondary {
+    background-color: gray;
+    color: white;
+    padding: 6px 15px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}

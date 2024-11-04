@@ -12,18 +12,6 @@ use App\Models\User;
 
 class ProfileController extends Controller
 {
-
-    public function index()
-    {
-        $usuarios = User::get();
-       
-       return view(
-        'profile.index', [
-            'usuarios' => $usuarios
-        ]
-        );
-
-    }
     
 
     /**

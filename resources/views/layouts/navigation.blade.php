@@ -38,8 +38,8 @@
                             {{ __('Perfil') }}
                         </x-dropdown-link>
 
-                        <x-dropdown-link :href="route('profile.register')">
-                            {{ __('Cadastrar') }}
+                        <x-dropdown-link :href="route('list.index')">
+                            {{ __('Lista Usuarios') }}
                         </x-dropdown-link>
 
                         <!-- Authentication -->
@@ -99,8 +99,8 @@
                     </x-responsive-nav-link>
                 </form>
                 
-                <x-responsive-nav-link :href="route('register')">
-                    {{ __('Cadastrar') }}
+                <x-responsive-nav-link :href="route('list.index')">
+                    {{ __('Lista Usuarios') }}
                 </x-responsive-nav-link>
                 
             </div>
